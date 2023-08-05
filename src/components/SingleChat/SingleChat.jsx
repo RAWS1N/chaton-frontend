@@ -88,10 +88,9 @@ function SingleChat({ fetchAgain, setFetchAgain }) {
       }
 
       const { data } = await Server.get(`/user/notification/remove`, config)
-      console.log(data)
     }
     catch (e) {
-      console.log("notification removed")
+      console.log(e.message)
     }
   }
 
